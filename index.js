@@ -10,6 +10,7 @@ function printMessage (message, character, margin = 15) {
     margin: { left: margin },
     borderStyle: "round",
   }));
+  Logger.print(" ".repeat(margin- 1) + "/");
   Logger.print(character);
 }
 
