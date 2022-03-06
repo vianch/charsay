@@ -1,0 +1,23 @@
+{
+  "name": "charsay",
+  "version": "0.1.0",
+  "description": "Console log with characters",
+  "main": "index.js",
+  "repository": "git@github.com:vianch/charsay.git",
+  "author": "v@vianch.com",
+  "license": "MIT",
+  "bin": "cli.js",
+  "type": "module",
+  "files": [
+		"index.js",
+		"cli.js",
+		"ASCII",
+		"lib",
+		"utils"
+	],
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "gradient-string": "^2.0.0",
+    "taketalk": "^1.0.0"
+  }
+}
