@@ -2,7 +2,7 @@
 import taketalk from "taketalk";
 
 // Utils
-import { getAsciiList, openFile } from "./utils/file.util.js";
+import { getAsciiList, getPath, openFile } from "./utils/file.util.js";
 import Logger from "./utils/logger.js";
 
 // Main
@@ -28,7 +28,7 @@ const help = () => {
 };
 
 const version = async () => {
-      const path = new URL("./package.json", import.meta.url).pathname;
+      const path = getPath("./package.json");
       const packageData = await openFile(path);
       Logger.log(JSON.parse(packageData)?.version || "0.0.0");
 };

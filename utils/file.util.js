@@ -6,10 +6,12 @@ export const openFile = async (path) => {
 	return file.toString();
 };
 
+export const getPath = (path) => new URL(path, import.meta.url).pathname;
 
 export const getAsciiList = () => {
   try {
-    const files = fs.readdirSync('./ASCII/');
+    const path = getPath("./ASCII/");
+    const files = fs.readdirSync(path);
    
     if (files === undefined || files?.length === 0) {
 			throw Error("Character not found");
