@@ -1,10 +1,11 @@
 import boxen from "boxen";
+import { URL } from "url";
 
 import Logger from "./utils/logger.js";
 import { getAsciiList, openFile } from "./utils/file.util.js";
 
 
-function printMessage (message, character, margin = 15) {
+function printMessage (message, character, margin = 10) {
   Logger.print(  boxen(message, {
     padding: 0.7,
     margin: { left: margin },
@@ -14,14 +15,15 @@ function printMessage (message, character, margin = 15) {
   Logger.print(character);
 }
 
-const charsay = async (message, ascii = "homer") => {
+const charsay = async (message, ascii = "homer", margin = 10) => {
   try {
     if(!message) {
       throw Error("No message provided");
     }
 
     const asciiList = getAsciiList();
-    const asciiCharacter = await openFile(`./ASCII/${ascii}`);
+    const path = new URL(`./ASCII/${ascii}`, import.meta.url).pathname;
+    const asciiCharacter = await openFile(path);
     const existAscii = asciiList.indexOf(ascii)
 
     if(!asciiList){
@@ -32,11 +34,13 @@ const charsay = async (message, ascii = "homer") => {
       throw Error("Character not found");
     }
 
-    printMessage(message, asciiCharacter);
+    printMessage(message, asciiCharacter, margin);
   } catch(error) {
     Logger.error("Something went wrong\n", error);
   }
 
 };
+
+charsay("height:", "macintosh", 12);
 
 export default charsay;

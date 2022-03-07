@@ -28,7 +28,8 @@ const help = () => {
 };
 
 const version = async () => {
-      const packageData = await openFile("./package.json");
+      const path = new URL("./package.json", import.meta.url).pathname;
+      const packageData = await openFile(path);
       Logger.log(JSON.parse(packageData)?.version || "0.0.0");
 };
 
