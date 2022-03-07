@@ -41,6 +41,4 @@ const charsay = async (message, ascii = "homer", margin = 10) => {
 
 };
 
-charsay("height:", "macintosh", 12);
-
 export default charsay;
