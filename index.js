@@ -3,7 +3,6 @@ import boxen from "boxen";
 import Logger from "./utils/logger.js";
 import { getAsciiList, getPath, openFile } from "./utils/file.util.js";
 
-
 function printMessage (message, character, margin = 12) {
   Logger.print(  boxen(message, {
     padding: 0.7,

@@ -18,10 +18,11 @@ const help = () => {
     Usage
       $ charsay <string>
       $ charsay <string> <character name>
+      $ charsay <string> <character name | optional> <message margin | optional>
       $ echo <string> | charsay
     
     Example
-      $ charsay 'Hi this is homer' homer
+      $ charsay 'Hi this is homer' homer 10
   `);
   Logger.log("\nTry from the following chracters :");
   Logger.print(asciiList);
