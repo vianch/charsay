@@ -1,13 +1,5 @@
 <h1 align="center">CHARSAY - LOGGER PRINTER WITH CHARACTERS 👨‍💻</h3>
 
-
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-Character examples
-
 # Usage
 
 ## Install globally in your terminal
@@ -83,3 +75,13 @@ Function :-
 ```js
 charsay(<type your message here>,<character name here | optional>,<message margin | optional>)
 ```
+
+## Character examples
+
+![Screen Shot 2022-03-07 at 7 07 35 PM](https://user-images.githubusercontent.com/1800887/157139714-f8d15de4-faa5-4ba6-bd8c-15456a77185d.png)
+
+![Screen Shot 2022-03-07 at 7 08 25 PM](https://user-images.githubusercontent.com/1800887/157139709-ea8ee45d-56c8-4f05-9a61-fd4eaa699720.png)
+
+![Screen Shot 2022-03-07 at 7 06 50 PM](https://user-images.githubusercontent.com/1800887/157139715-fa65446d-24f3-478e-823c-d9f9b30ee7fd.png)
+
+![Screen Shot 2022-03-07 at 7 04 46 PM](https://user-images.githubusercontent.com/1800887/157139716-327ff3b9-ddd0-49d6-bcb8-9a166c5ce23f.png)
