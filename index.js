@@ -1,11 +1,10 @@
 import boxen from "boxen";
-import { URL } from "url";
 
 import Logger from "./utils/logger.js";
 import { getAsciiList, getPath, openFile } from "./utils/file.util.js";
 
 
-function printMessage (message, character, margin = 10) {
+function printMessage (message, character, margin = 12) {
   Logger.print(  boxen(message, {
     padding: 0.7,
     margin: { left: margin },
@@ -15,7 +14,7 @@ function printMessage (message, character, margin = 10) {
   Logger.print(character);
 }
 
-const charsay = async (message, ascii = "homer", margin = 10) => {
+const charsay = async (message, ascii = "homer", margin = 12) => {
   try {
     if(!message) {
       throw Error("No message provided");

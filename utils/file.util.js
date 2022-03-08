@@ -1,4 +1,3 @@
-import path from "path";
 import fs from "fs";
 
 export const openFile = async (path) => {
@@ -6,7 +5,7 @@ export const openFile = async (path) => {
 	return file.toString();
 };
 
-export const getPath = (path) => new URL(path, import.meta.url).pathname;
+export const getPath = (path) => new URL(`../${path}`, import.meta.url).pathname;
 
 export const getAsciiList = () => {
   try {

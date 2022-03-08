@@ -9,7 +9,7 @@ import Logger from "./utils/logger.js";
 import charsay from "./index.js";
 
 const init = (input, options) => {
-  charsay(input, options["_"][1]);
+  charsay(input, options["_"][1], options["_"][2] ?? 12);
 };
 
 const help = () => {
