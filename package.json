@@ -1,6 +1,6 @@
 {
   "name": "charsay",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Console log with characters",
   "main": "index.js",
   "repository": "git@github.com:vianch/charsay.git",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "bin": "cli.js",
   "type": "module",
-  "types": "./lib/charsay.d.ts",
+  "types": "./lib/types/charsay.d.ts",
   "files": [
     "index.js",
     "cli.js",

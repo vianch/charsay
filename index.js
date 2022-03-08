@@ -1,5 +1,9 @@
 import boxen from "boxen";
 
+// Constants
+import { AsciiFolder } from "./lib/constants/environment.js";
+
+// Utils
 import Logger from "./utils/logger.js";
 import { getAsciiList, getPath, openFile } from "./utils/file.util.js";
 
@@ -20,7 +24,7 @@ const charsay = async (message, ascii = "homer", margin = 12) => {
     }
 
     const asciiList = getAsciiList();
-    const path = getPath(`./ASCII/${ascii}`);
+    const path = getPath(`${AsciiFolder}${ascii}`);
     const asciiCharacter = await openFile(path);
     const existAscii = asciiList.indexOf(ascii)
 
