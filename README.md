@@ -2,6 +2,11 @@
 
 # Usage
 
+## NOTES: 
+- NO TYPESCRIPT SUPPORT YET 
+- Only node / serverside commonjs 
+-  no for web
+
 ## Install globally in your terminal
 
 Make sure you have npm installed in your system
