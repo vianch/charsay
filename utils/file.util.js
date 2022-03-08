@@ -1,7 +1,7 @@
 import fs from "fs";
 
 // Constants
-import { AsciiFolder } from "../lib/constants/environment";
+import { AsciiFolder } from "../lib/constants/environment.js";
 
 export const openFile = async (path) => {
 	let file = await fs.promises.readFile(path);
