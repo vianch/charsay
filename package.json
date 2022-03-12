@@ -1,6 +1,6 @@
 {
   "name": "charsay",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Console log with characters",
   "main": "index.js",
   "repository": "git@github.com:vianch/charsay.git",
